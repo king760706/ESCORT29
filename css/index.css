@@ -1,0 +1,21 @@
+/*按鈕*/
+.button:nth-child(1) {
+    margin-right: 20px;
+}
+
+.button.leave {
+    background: #bbb;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    /*按鈕*/
+    .button {
+        width: 46%;
+    }
+
+    .button:nth-child(1) {
+        margin-right: 10px;
+    }
+}

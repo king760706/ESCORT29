@@ -1,0 +1,99 @@
+/*select*/
+.form-select {
+    display: block;
+    margin-top: 15px;
+    padding: 4px 8px 4px 0;
+    font-size: 15px;
+    color: #bbb;
+    border-bottom: 1px solid #bbb;
+    cursor: default;
+}
+
+.form-select i {
+    display: block;
+    float: right;
+    line-height: 23px;
+    color: #bbb;
+}
+
+.form-select.actived {
+    border-color: #eebd00;
+}
+
+.form-select.selected i {
+    color: #bbb;
+}
+
+.form-select.actived i,
+.form-select.selected {
+    color: #eebd00;
+}
+
+.form-select-area {
+    padding: 15px;
+    display: none;
+}
+
+.form-select-area.overflow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    max-width: 994px;
+    width: 100%;
+    margin: 0 auto;
+    background: #000;
+}
+
+.form-select-area.overflow:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-select-area li {
+    float: left;
+    width: 16.66%;
+    margin-bottom: 15px;
+}
+
+.form-select-area .form-select-option {
+    font-size: 14px;
+    color: #fff;
+}
+
+.form-select-area .form-select-option:hover,
+.form-select-area .form-select-option.selected {
+    color: #eebd00;
+}
+
+.form-select-area .form-select-option i {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /*select*/
+    .form-select {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: 10px;
+        padding: 4px 15px;
+    }
+
+    .form-select-area.overflow {
+        position: relative;
+        left: auto;
+        right: auto;
+        margin: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        background: none;
+    }
+
+    .form-select-area li {
+        width: 50%;
+    }
+}

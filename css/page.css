@@ -1,0 +1,27 @@
+/*主要標題*/
+.main-title h1 {
+    text-align: center;
+}
+
+/*page*/
+.page {
+    padding-top: 30px;
+    word-break: normal;
+    font-size: 14px;
+    color: #bbb;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /*主要標題*/
+    .main-title {
+        display: block;
+    }
+
+    /*page*/
+    .page {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

@@ -1,0 +1,513 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Microsoft JhengHei';
+    font-size: 100%;
+    vertical-align: baseline;
+    background: #252525;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*input*/
+.form-input {
+    padding: 5px 8px;
+    font-size: 14px;
+    outline: none;
+    background: #252525;
+    color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+/*placeholder*/
+.form-input::-webkit-input-placeholder,
+.form-input:-moz-placeholder,
+.form-input::-moz-placeholder,
+.form-input:-ms-input-placeholder {
+    color: #bbb;
+}
+
+.form-input-icon {
+    position: relative;
+}
+
+.form-input-icon .form-input {
+    padding-right: 30px;
+}
+
+.form-input-icon i {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    z-index: 200;
+    font-size: 16px;
+    color: #bbb;
+    cursor: pointer;
+}
+
+/*按鈕*/
+.button {
+    display: inline-block;
+    padding: 8px 30px;
+    text-align: center;
+    font-size: 14px;
+    background: #eebd00;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #bd9700 !important;
+    color: #000 !important;
+}
+
+/*********頁首*********/
+header {
+    background: #000;
+}
+
+/*選單列*/
+header nav {
+    display: flex;
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*logo*/
+header nav .navbar-brand {
+    display: inline-block;
+    padding: 0;
+    height: 60px;
+    line-height: 53px;
+}
+
+header nav .navbar-brand img {
+    width: auto;
+    height: 27px;
+}
+
+/*選單區塊*/
+header nav .navbar-area {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+/*選單連結*/
+header nav .navbar-area .navbar-nav {
+    flex-direction: row;
+}
+
+header nav .navbar-area .navbar-link {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 25px;
+    line-height: 60px;
+    color: #fff;
+}
+
+header nav .navbar-area .navbar-link:hover,
+header nav .navbar-area .navbar-link.active {
+    color: #eebd00;
+}
+
+/*選單輸入*/
+header nav .navbar-area .form-input-icon {
+    margin-right: 8px;
+}
+
+header nav .navbar-area .form-input {
+    width: 320px;
+}
+
+/*選單項目*/
+header nav .navbar-area .navbar-item {
+    line-height: 60px;
+    color: #bbb;
+    font-size: 20px;
+    margin-left: 13px;
+}
+
+header nav .navbar-area .navbar-item:hover {
+    color: #eebd00;
+}
+
+/*選單登入*/
+header nav .navbar-area .navbar-login {
+    display: inline-block;
+    margin: 12px 0 12px 13px;
+    padding: 5px 18px;
+    font-size: 14px;
+    background: #252525;
+    color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+header nav .navbar-area .navbar-login:hover {
+    background: #eebd00;
+    color: #000;
+    border: 1px solid #eebd00;
+}
+
+header nav .navbar-area .navbar-link i,
+header nav .navbar-area .navbar-item span,
+header nav .navbar-area .navbar-login i {
+    display: none;
+}
+
+/*選單search*/
+header nav .navbar-search {
+    font-size: 24px;
+    line-height: 60px;
+    color: #bbb;
+    display: none;
+}
+
+/*選單menu*/
+header nav .navbar-menu {
+    width: 25px;
+    height: 60px;
+    padding: 0;
+    display: none;
+}
+
+header nav .navbar-menu .line {
+    display: block;
+    height: 2px;
+    background: #bbb;
+    transition-duration: 0.3s;
+}
+
+header nav .navbar-menu .line:first-child {
+    transform: translateY(23px) rotate(0deg);
+}
+
+header nav .navbar-menu .line:last-child {
+    transform: translateY(30px) rotate(0deg);
+}
+
+header nav .navbar-menu.closed .line:first-child {
+    transform: translateY(28px) rotate(45deg);
+}
+
+header nav .navbar-menu.closed .line:last-child {
+    transform: translateY(26px) rotate(-45deg);
+}
+
+/*login model*/
+#loginModel .model-area {
+    max-width: 500px;
+}
+
+/*model body*/
+#loginModel .model-area .model-body {
+    padding: 30px 100px;
+    text-align: center;
+}
+
+#loginModel .model-area .login-notice {
+    margin-bottom: 50px;
+}
+
+#loginModel .model-area .login-button {
+    margin: 0 auto 20px;
+    width: 200px;
+}
+
+/*google button*/
+.google-button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #fff;
+    color: #737373;
+    border-radius: 4px;
+    white-space: nowrap;
+    padding: 0;
+    cursor: pointer;
+}
+
+.google-button-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px 0 8px 8px;
+    width: 22px;
+    height: 22px;
+    box-sizing: border-box;
+}
+
+.google-button-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#loginModel .model-area .login-conclusion {
+    font-size: 12px;
+}
+
+#loginModel .model-area .login-conclusion a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+#loginModel .model-area .login-conclusion a:hover {
+    color: #eebd00;
+}
+
+/*********頁中*********/
+main {
+    word-break: break-all;
+}
+
+/*主要標題*/
+.main-title {
+    padding: 20px 0 10px;
+    border-bottom: 1px solid #eebd00;
+}
+
+.main-title h1 {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*主要內容*/
+.main-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px 20px;
+    min-height: 400px;
+    background-image: url(../img/bg-map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 5%;
+}
+
+/*********頁尾*********/
+footer {
+    background: #000;
+}
+
+footer .container-fluid {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 40px 20px 30px;
+}
+
+footer .container-fluid h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+footer .container-fluid ul {
+    margin-bottom: 20px;
+}
+
+footer .container-fluid li {
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+footer .container-fluid .hype-link {
+    font-size: 14px;
+    color: #fff;
+}
+
+footer .container-fluid .hype-link:hover {
+    color: #eebd00;
+}
+
+footer .container-fluid .hype-link i {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+footer .container-fluid .hype-logo {
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+footer .container-fluid .hype-logo img {
+    width: auto;
+    height: 24px;
+}
+
+footer .container-fluid p {
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+footer .container-fluid .hype-logo-description {
+    margin-bottom: 15px;
+    color: #eebd00;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /*********頁首*********/
+    /*logo*/
+    header nav .navbar-brand {
+        margin: 0 auto;
+    }
+
+    /*選單區塊*/
+    header nav .navbar-area {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 800;
+        background: rgba(0, 0, 0, 0.8);
+        margin: 0;
+        padding-top: 0;
+        height: 0;
+        opacity: 0;
+        display: block;
+        overflow: hidden;
+        transition: all 0.6s ease;
+    }
+
+    header nav .navbar-area.open {
+        padding-top: 60px;
+        height: 100%;
+        opacity: 1;
+        overflow: auto;
+    }
+
+    header nav .navbar-area i {
+        margin-right: 8px;
+        font-size: 18px;
+        vertical-align: middle;
+        margin-bottom: 2px;
+    }
+
+    /*選單連結*/
+    header nav .navbar-area .navbar-nav {
+        flex-direction: column;
+    }
+
+    header nav .navbar-area .navbar-link {
+        display: block;
+        margin-right: 0;
+    }
+
+    header nav .navbar-area .form-inline {
+        display: block;
+    }
+
+    /*選單輸入*/
+    header nav .navbar-area .form-input-icon {
+        display: none;
+    }
+
+    /*選單項目*/
+    header nav .navbar-area .navbar-item {
+        display: block;
+        color: #fff;
+        margin-left: 0;
+    }
+
+    /*選單登入*/
+    header nav .navbar-area .navbar-login {
+        display: block;
+        margin: 0;
+        background: none;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+    }
+
+    header nav .navbar-area .navbar-link,
+    header nav .navbar-area .navbar-item,
+    header nav .navbar-area .navbar-login {
+        padding: 0 30px;
+        line-height: 60px;
+        font-size: 15px;
+        border: 1px solid transparent;
+    }
+
+    header nav .navbar-area .navbar-link:hover,
+    header nav .navbar-area .navbar-item:hover,
+    header nav .navbar-area .navbar-login:hover {
+        background: none;
+        color: #eebd00;
+        border: 1px solid #eebd00;
+    }
+
+    header nav .navbar-area .navbar-link i,
+    header nav .navbar-area .navbar-item span,
+    header nav .navbar-area .navbar-login i {
+        display: inline-block;
+    }
+
+    /*選單search*/
+    header nav .navbar-search {
+        position: absolute;
+        left: 15px;
+        top: 0;
+        display: block;
+    }
+
+    /*選單menu*/
+    header nav .navbar-menu {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        z-index: 999;
+        display: block;
+    }
+
+    /*login model*/
+    /*model body*/
+    #loginModel .model-area .model-body {
+        padding: 30px 50px;
+    }
+
+    /*********頁中*********/
+    /*主要標題*/
+    .main-title {
+        display: none;
+    }
+
+    /*********頁尾*********/
+    footer .container-fluid ul {
+        margin-bottom: 40px;
+    }
+}

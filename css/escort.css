@@ -1,0 +1,477 @@
+/*主要標題*/
+.main-title {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 25px 15px;
+    border-bottom: none;
+}
+
+.main-title h1 {
+    max-width: 100%;
+    margin: 0 0 6px;
+    padding: 0;
+    font-size: 18px;
+}
+
+.main-title .address {
+    margin-bottom: 6px;
+    font-size: 16px;
+    word-break: normal;
+    color: #bbb;
+}
+
+.main-title .status li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.main-title .status li.home,
+.main-title .status li.car,
+.main-title .status li.video,
+.main-title .status li.actived {
+    color: #eebd00;
+}
+
+.main-title .status li.gift {
+    color: #bb4d8a;
+}
+
+.main-title .status li.clock {
+    color: #86c344;
+}
+
+.main-title .status li img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.main-title .main-item {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.main-title .main-item a {
+    font-size: 16px;
+    color: #eebd00;
+}
+
+.main-title .main-item a:hover {
+    color: #bd9700;
+}
+
+.main-title .main-item a i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    color: #bbb;
+}
+
+/*主要內容*/
+.main-content {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+/*icon*/
+i.fa-phone {
+    transform: rotateZ(90deg);
+}
+
+i.fa-link {
+    transform: rotateZ(45deg);
+}
+
+/*lightgallery*/
+.lg-backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*owl carousel*/
+.owl-carousel-area {
+    padding: 30px 0;
+    background: #000;
+}
+
+.owl-carousel {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.owl-carousel-area .item {
+    cursor: pointer;
+}
+
+.owl-carousel-area .owl-theme .owl-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 200;
+    width: 100%;
+    height: 0;
+    margin: auto;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    outline: none;
+    height: 50px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 0.1;
+    margin-top: -55px;
+    background: none !important;
+    color: #fff;
+    border: none;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    color: #eebd00;
+}
+
+.owl-theme .owl-nav .owl-prev {
+    float: left;
+    margin-left: -40px;
+}
+
+.owl-theme .owl-nav .owl-next {
+    float: right;
+    margin-right: -40px;
+}
+
+/*警語*/
+.warning {
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*明細*/
+.detail {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.detail .youtube-area {
+    margin-bottom: 20px;
+}
+
+.detail .youtube-area iframe {
+    width: 100%;
+    height: 420px;
+}
+
+.detail .detail-area {
+    margin-bottom: 20px;
+    padding: 20px;
+    word-break: normal;
+    background: #000;
+}
+
+.detail .detail-area h1 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.detail .detail-area .about-me-content {
+    margin-bottom: 30px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/*back*/
+.detail .detail-area .about-me-back {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 40px;
+    font-size: 14px;
+    color: #eebd00;
+    border: 1px solid #eebd00;
+    border-radius: 4px;
+}
+
+.detail .detail-area .about-me-back:hover {
+    background: #eebd00;
+    color: #000;
+}
+
+.detail .detail-area .my-area:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.detail .detail-area .my-label,
+.detail .detail-area .my-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.detail .detail-area .my-label {
+    float: left;
+    color: #bbb;
+}
+
+.detail .detail-area .my-content {
+    float: left;
+}
+
+.detail-area .contact-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.detail-area .contact-item a {
+    color: #eebd00;
+}
+
+.detail-area .contact-item a:hover {
+    color: #bd9700;
+}
+
+.detail-area .contact-item a i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    color: #bbb;
+}
+
+.detail-area .contact-item.notice {
+    color: #bbb;
+}
+
+.detail .features-area {
+    padding: 0 20px;
+}
+
+.features-area .features-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.features-area .features-item a {
+    color: #bbb;
+}
+
+.features-area .features-item a:hover {
+    color: #eebd00;
+}
+
+.features-area .features-item a i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+/*report*/
+.detail .report-area {
+    margin: 30px 0 10px;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #bbb;
+    border-top: 1px solid #bbb;
+}
+
+.detail .report-area .col-md-8 {
+    padding-left: 0;
+}
+
+.detail .report-area .col-md-4 {
+    padding-right: 0;
+}
+
+.detail .report-area p {
+    word-break: normal;
+}
+
+.detail .report-area .report-item {
+    display: inline;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.detail .report-area .report-item i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-bottom: 3px;
+    font-size: 26px;
+}
+
+.detail .report-area p:not(.report-item) {
+    margin-top: 7px;
+    text-align: justify;
+}
+
+.detail .report-area .tel {
+    display: block;
+    margin-top: 30px;
+    padding: 20px 10px;
+    text-align: center;
+    background: #eebd00;
+    color: #000;
+    border-radius: 4px;
+}
+
+.detail .report-area .tel:hover {
+    background: #bd9700;
+}
+
+.detail .report-area .tel h1 {
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.detail .report-area .tel h1 i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+
+.detail .report-area .tel div {
+    font-size: 12px;
+}
+
+/*email model*/
+#emailModel .model-area {
+    max-width: 500px;
+}
+
+/*model body*/
+#emailModel .model-area .model-body {
+    padding: 20px 50px;
+}
+
+/*input*/
+#emailModel .model-area .form-input {
+    padding: 8px 10px;
+    width: 100%;
+}
+
+#emailModel .model-area textarea.form-input {
+    height: 130px !important;
+    resize: none;
+}
+
+/*google recaptcha*/
+.g-recaptcha {
+    transform: scale(0.83);
+    transform-origin: left top;
+}
+
+/*按鈕*/
+.send {
+    margin-top: 12px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /*主要標題*/
+    .main-title {
+        display: block;
+        padding: 20px;
+    }
+
+    .main-title .status {
+        margin-bottom: 15px;
+    }
+
+    /*owl carousel*/
+    .owl-carousel-area {
+        padding: 20px 0;
+    }
+
+    .owl-theme .owl-nav [class*='owl-'] {
+        margin-top: -40px;
+    }
+
+    .owl-theme .owl-nav .owl-prev {
+        margin-left: 0;
+    }
+
+    .owl-theme .owl-nav .owl-next {
+        margin-right: 0;
+    }
+
+    /*警語*/
+    .warning {
+        padding: 15px 0;
+    }
+
+    /*明細*/
+    .detail .youtube-area iframe {
+        height: 300px;
+    }
+
+    /*report*/
+    .detail .report-area {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 999;
+        width: 100%;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border-top: none;
+        transition: all 0.4s ease;
+    }
+
+    .detail .report-area.show {
+        height: 82px;
+    }
+
+    .detail .report-area .col-md-8 {
+        display: none;
+    }
+
+    .detail .report-area .col-md-4 {
+        display: block;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .detail .report-area .tel {
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    footer {
+        margin-bottom: 82px;
+    }
+
+    /*model*/
+    /*model body*/
+    #emailModel .model-area .model-body {
+        padding: 20px 30px;
+    }
+
+    /*google recaptcha*/
+    .g-recaptcha {
+        transform: scale(0.95);
+        transform-origin: center top;
+    }
+}
